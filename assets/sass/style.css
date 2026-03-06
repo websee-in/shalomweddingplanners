@@ -19987,4 +19987,14 @@ wpo-hero-slider-s4
 }
 }
 
+.star-class i{
+    color: #ffb000 !important;
+    font-size: 30px !important;
+}
+
+.star-class {
+    display: flex;
+    justify-content: center;
+}
+
 

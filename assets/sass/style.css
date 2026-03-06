@@ -3559,21 +3559,6 @@ a.ui-button:active,
 
 /*3.1 wpo-hero-slider*/
 
-.wpo-hero-section {
-    padding: 0 50px;
-}
-
-@media (max-width: 1700px) {
-    .wpo-hero-section {
-        padding: 0 30px;
-    }
-}
-
-@media (max-width: 1500px) {
-    .wpo-hero-section {
-        padding: 0 10px;
-    }
-}
 
 .wpo-hero-section .wpo-hero-items {
     display: -webkit-box;
@@ -5096,7 +5081,7 @@ wpo-hero-slider-s4
 
 .wpo-hero-style-2 {
     position: relative;
-    height: 75vh;
+    height: 86vh;
 }
 
 
@@ -6557,11 +6542,10 @@ wpo-hero-slider-s4
 }
 
 .wpo-testimonial-section .wpo-testimonial-items {
-    padding: 40px 65px 50px;
-    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px 40px 30px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-left: -50px;
+    margin: 10px;
     background: #fff;
     position: relative;
     z-index: 1;
@@ -6669,6 +6653,7 @@ wpo-hero-slider-s4
     background: #fff;
     position: relative;
     padding: 40px 0;
+        min-height: 498px;
 }
 
 @media (max-width: 1399px) {
@@ -8434,7 +8419,7 @@ wpo-hero-slider-s4
 
 .wpo-about-section-s2 {
     padding-top: 25px;
-    padding-bottom: 200px;
+    padding-bottom: 125px;
 }
 
 @media (max-width: 1399px) {
@@ -19938,7 +19923,6 @@ wpo-hero-slider-s4
 .wedding-announcement h2 {
     position: relative;
     z-index: 100;
-        margin-top: -90px;
 }
 
 .wedding-announcement p {
@@ -19957,6 +19941,31 @@ wpo-hero-slider-s4
     width: 260px;
 }
 
+@media screen and (max-width: 767px){
+.banner-height {
+    height: 70vh !important;
+    width: 100% !important;
+}
+
+.wpo-hero-style-2 {
+    position: relative;
+    height: 70vh;
+}
+
+.wpo-testimonial-section .wpo-testimonial-items .wpo-testimonial-item{
+    min-height: auto;
+}
+
+.wpo-hero-section .wpo-hero-items .owl-dots {
+    margin-top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 70%);
+            display: flex;
+}
+}
+
 
 @media screen and (min-width: 767px) and (max-width: 1250px) {
   .mini-cart a {
@@ -19965,10 +19974,16 @@ wpo-hero-slider-s4
 }
 }
 
-@media screen and (min-width: 150px) and (max-width: 1549px) {
+@media screen and (min-width: 1250px) and (max-width: 1549px) {
   .mini-cart a {
     padding: 15px 15px;
     font-size: 18px;
+}
+}
+
+@media screen and (min-width: 767px){
+  .wpo-hero-section {
+   padding-bottom: 0;
 }
 }
 

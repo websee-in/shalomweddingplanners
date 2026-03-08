@@ -166,7 +166,7 @@ h4,
 h5,
 h6 {
     color: #323232;
-   font-family: "Arizonia", cursive;
+    font-family: "Arizonia", cursive;
     font-weight: 400;
 }
 
@@ -663,7 +663,7 @@ a.ui-button:active,
     font-size: 1.2rem;
     -webkit-transition: all .3s;
     transition: all .3s;
-        border-radius: 5px;
+    border-radius: 5px;
 }
 
 .theme-btn.theme-btn-s3,
@@ -3559,7 +3559,6 @@ a.ui-button:active,
 
 /*3.1 wpo-hero-slider*/
 
-
 .wpo-hero-section .wpo-hero-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5084,10 +5083,7 @@ wpo-hero-slider-s4
     height: 86vh;
 }
 
-
-@media (max-width: 767px) {
-    
-}
+@media (max-width: 767px) {}
 
 .wpo-hero-style-2 .slide-inner:before {
     display: none;
@@ -5144,21 +5140,18 @@ wpo-hero-slider-s4
     color: #fff;
 }
 
-
 @media (max-width: 767px) {
-        .wpo-hero-style-2 .wedding-announcement .couple-text h2 {
+    .wpo-hero-style-2 .wedding-announcement .couple-text h2 {
         font-size: 60px;
         line-height: normal;
     }
-
-    .mini-cart a span{
+    .mini-cart a span {
         display: none;
     }
-
     .mini-cart a {
-    padding: 7px 13px !important;
-    font-size: 20px;
-}
+        padding: 7px 13px !important;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -5167,8 +5160,6 @@ wpo-hero-slider-s4
         line-height: normal;
     }
 }
-
-
 
 .wpo-hero-style-2 .wedding-announcement .couple-text p {
     font-weight: 400;
@@ -5857,6 +5848,7 @@ wpo-hero-slider-s4
     color: #fff;
 }
 
+
 /* .wpo-site-footer .footer-link {
     margin: 30px 0;
 } */
@@ -5890,6 +5882,7 @@ wpo-hero-slider-s4
         padding: 0 10px;
     }
 }
+
 
 /* .wpo-site-footer .footer-link ul li:before {
     position: absolute;
@@ -6175,7 +6168,9 @@ wpo-hero-slider-s4
     margin-top: 20px;
 }
 
+
 /* .wpo-about-section .wpo-about-wrap:nth-child(even), */
+
 .wpo-about-section-s2 .wpo-about-wrap:nth-child(even) {
     margin-top: -180px;
 }
@@ -6655,7 +6650,7 @@ wpo-hero-slider-s4
     background: #fff;
     position: relative;
     padding: 40px 0;
-        min-height: 498px;
+    min-height: 498px;
 }
 
 @media (max-width: 1399px) {
@@ -8646,7 +8641,7 @@ wpo-hero-slider-s4
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-        width: 100%;
+    width: 100%;
 }
 
 .wpo-contact-section-s2 .contact-bg img,
@@ -19930,68 +19925,62 @@ wpo-hero-slider-s4
     z-index: 100;
 }
 
-.video-wrap img{
+.video-wrap img {
     height: 500px;
     width: 100%;
     object-fit: cover;
 }
 
-
-.footer-image a img{
+.footer-image a img {
     width: 260px;
 }
 
-@media screen and (max-width: 767px){
-.banner-height {
-    height: 70vh !important;
-    width: 100% !important;
+@media screen and (max-width: 767px) {
+    .banner-height {
+        height: 70vh !important;
+        width: 100% !important;
+    }
+    .wpo-hero-style-2 {
+        position: relative;
+        height: 70vh;
+    }
+    .wpo-testimonial-section .wpo-testimonial-items .wpo-testimonial-item {
+        min-height: auto;
+    }
+    .wpo-hero-section .wpo-hero-items .owl-dots {
+        margin-top: 0;
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 70%);
+        display: flex;
+    }
 }
-
-.wpo-hero-style-2 {
-    position: relative;
-    height: 70vh;
-}
-
-.wpo-testimonial-section .wpo-testimonial-items .wpo-testimonial-item{
-    min-height: auto;
-}
-
-.wpo-hero-section .wpo-hero-items .owl-dots {
-    margin-top: 0;
-    bottom: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 70%);
-            display: flex;
-}
-}
-
 
 @media screen and (min-width: 767px) and (max-width: 1250px) {
-  .mini-cart a {
-    padding: 15px 10px;
-    font-size: 15px;
-}
+    .mini-cart a {
+        padding: 15px 10px;
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 1250px) and (max-width: 1549px) {
-  .mini-cart a {
-    padding: 15px 15px;
-    font-size: 18px;
-}
-}
-
-@media screen and (min-width: 767px){
-  .wpo-hero-section {
-   padding-bottom: 0;
+    .mini-cart a {
+        padding: 15px 15px;
+        font-size: 18px;
+    }
 }
 
-.pt-30 {
-    padding-top: 30px !important;
-}
+@media screen and (min-width: 767px) {
+    .wpo-hero-section {
+        padding-bottom: 0;
+    }
+    .pt-30 {
+        padding-top: 100px !important;
+    }
 }
 
-.star-class i{
+.star-class i {
     color: #ffb000 !important;
     font-size: 30px !important;
 }
@@ -20000,7 +19989,6 @@ wpo-hero-slider-s4
     display: flex;
     justify-content: center;
 }
-
 
 .wpo-page-title::before {
     position: absolute;
@@ -20018,23 +20006,22 @@ wpo-hero-slider-s4
     z-index: 100;
 }
 
-.wpo-about-wrap .row{
+.wpo-about-wrap .row {
     display: flex;
     align-items: center;
 }
 
-@media screen and (min-width: 767px){
-.wpo-about-section .wpo-about-wrap:first-child{
-    margin-bottom: 100px;
+@media screen and (min-width: 767px) {
+    .wpo-about-section .wpo-about-wrap:first-child {
+        margin-bottom: 100px;
+    }
 }
 
-}
-
-.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-img{
+.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-img {
     position: relative;
 }
 
-.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-img::before{
+.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-img::before {
     position: absolute;
     content: "";
     top: 0;
@@ -20050,9 +20037,8 @@ wpo-hero-slider-s4
     z-index: 10;
 }
 
-
-.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a{
-   font-weight: 400;
+.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a {
+    font-weight: 400;
     font-size: 45px;
     text-align: left;
     color: #fff;
@@ -20069,6 +20055,19 @@ wpo-hero-slider-s4
     padding-right: 20px;
 }
 
-.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover{
+.wpo-Service-section-s3 .wpo-Service-item .wpo-Service-text a:hover {
     color: #fff;
+}
+
+#success {
+    display: block;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.error-handling-messages {
+    width: 97%;
 }

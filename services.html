@@ -208,66 +208,31 @@
                                     <h4>Lets Meet</h4>
                                     <h2>Make An Inquiry</h2>
                                 </div>
-                                <form id="inquiry-form" method="post">
+                                <form method="post" class="contact-validation-active" onsubmit="sendEmail(event)">
                                     <div>
-                                        <input type="text" class="form-control" name="name" id="inquiry-name" placeholder="Name" required />
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required />
                                     </div>
                                     <div>
-                                        <input type="email" class="form-control" name="email" id="inquiry-email" placeholder="Email" required />
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
                                     </div>
                                     <div>
-                                        <input type="tel" class="form-control" name="phone" id="inquiry-phone" placeholder="Phone Number" required />
+                                        <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number" required />
                                     </div>
                                     <div class="date">
-                                        <input class="form-control" name="date" autocomplete="off" type="text" id="inquiry-date" placeholder="Wedding Date" required />
+                                        <input class="form-control" name="date" autocomplete="off" type="date" id="date" placeholder="Wedding Date" required />
                                     </div>
                                     <div>
-                                        <input type="text" class="form-control" name="location" id="inquiry-location" placeholder="Location" required />
+                                        <input type="text" class="form-control" name="location" id="location" placeholder="Location" required />
                                     </div>
 
                                     <div class="submit-area">
                                         <button type="submit" class="theme-btn-s3">
                         Send An Inquiry
                       </button>
-                                        <div id="c-loader" style="display: none;">
-                                            <i class="ti-reload"></i>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix error-handling-messages">
-                                        <div id="success" style="display: none; color: green; margin-top: 10px;">Thank you! Your inquiry has been sent.</div>
-                                        <div id="error" style="display: none; color: red; margin-top: 10px;">
-                                            Error occurred while sending email. Please try again later.
-                                        </div>
-                                    </div>
-                                </form>
-                                <script>
-                                    document.getElementById('inquiry-form').addEventListener('submit', function(e) {
-                                        e.preventDefault();
-                                        document.getElementById('c-loader').style.display = 'inline-block';
-                                        document.getElementById('success').style.display = 'none';
-                                        document.getElementById('error').style.display = 'none';
 
-                                        var formData = new FormData(this);
-                                        fetch('send_mail.php', {
-                                                method: 'POST',
-                                                body: formData
-                                            })
-                                            .then(response => response.text())
-                                            .then(data => {
-                                                document.getElementById('c-loader').style.display = 'none';
-                                                if (data === 'success') {
-                                                    document.getElementById('success').style.display = 'block';
-                                                    document.getElementById('inquiry-form').reset();
-                                                } else {
-                                                    document.getElementById('error').style.display = 'block';
-                                                }
-                                            })
-                                            .catch(error => {
-                                                document.getElementById('c-loader').style.display = 'none';
-                                                document.getElementById('error').style.display = 'block';
-                                            });
-                                    });
-                                </script>
+                                    </div>
+
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -344,6 +309,20 @@
         <script src="assets/js/jquery-plugin-collection.js"></script>
         <!-- Custom script for this template -->
         <script src="assets/js/script.js"></script>
+
+        <!-- SweetAlert2 for popups -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init({
+                    publicKey: "VqnUKmAr6GVLfXRgf",
+                });
+            })();
+        </script>
+        <script src="assets/js/email-send.js"></script>
 </body>
 
 </html>

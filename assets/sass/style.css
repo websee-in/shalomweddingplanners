@@ -7651,7 +7651,7 @@ wpo-hero-slider-s4
     -o-appearance: none;
     appearance: none;
     -moz-appearance: none;
-    background: transparent url(../images/date.png) no-repeat calc(100% - 15px) center;
+    /* background: transparent url(../images/date.png) no-repeat calc(100% - 15px) center; */
 }
 
 .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area .select.last,
@@ -20070,4 +20070,8 @@ wpo-hero-slider-s4
 
 .error-handling-messages {
     width: 97%;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+    background-color: #16100f !important;
 }

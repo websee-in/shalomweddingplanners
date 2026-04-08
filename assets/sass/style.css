@@ -20075,3 +20075,14 @@ wpo-hero-slider-s4
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
     background-color: #16100f !important;
 }
+
+input[type="date"] {
+    color: #ffffff !important; /* Forces text to be white */
+    min-height: 2.5rem;       /* Ensures the tap target is large enough */
+    display: block !important;
+}
+
+/* Specific fix for iOS/Safari to show the date icon/text */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Makes the calendar icon white if it's hidden */
+}
